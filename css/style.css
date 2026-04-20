@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+/* Colors */
+
+  --bg: #EDEFF1;
+  --surface: #FAFAF8;
+    
+
+  --text-primary: #2C3E50;
+  --text-secondary: #6B7280;
+    
+  --accent: #3C9CA8;
+  --border: #FAFAF8;
+  --hover: #E58A9E;
+  --label: #A8834A;
+
+
+/* Typography */
+
+  --font-serif: "Fraunces", serif;
+  --font-sans: "Inter", sans-serif;
+
+
+/* Spacing scale */
+
+--space-xs: 0.5rem;
+--space-sm: 1rem;
+--space-md: 2rem;
+--space-lg: 3rem;
+--space-xl: 5rem;
+
+/* Layout */
+
+--max-width: 1100px;
+
+}
+
+
+/* Base Styles */
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+  
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "SOFT" 100,
+    "WONK" 0;
+}
+  
+h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  text-align: center;
+}
+
+  
+p {
+  font-optical-sizing: auto;
+  font-size: 1.25rem;
+  font-style: normal;
+}
+  
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Layout and Section */
+section,
+.hero-section {
+  padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+.pri-nav {
+  position: fixed;
+  top: var(--space-xs);
+  left: 50%;
+  width: min(var(--max-width), 90%);
+  transform: translateX(-50%);
+  height: var(--space-lg);
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm);
+  
+  background: rgb(250, 250, 248, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  
+  border: 1px solid rgba(250, 250, 248, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(250, 250, 248, 0.1);
+  border-radius: 16px;
+}
+
+
+.mobile-nav {
+  display: inline-flex;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.mobile-menu {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary)
+}
+
+.menu-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+/* Logo */
+
+.logo-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  display: none;
+}
+
+/* Buttons */
+
+button {
+  background: var(--accent);
+  border: none;
+  color: var(--surface);
+  font-weight: 600;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Hero Overlay */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/alignwell-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.8);
+  z-index: -1;
+}
+
+/* Trust Signal */
+
+.trust-signals {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.trust-signal {
+  display:flex;
+  flex-direction: column;
+  width: 250px;
+  padding: var(--space-sm); 
+  border-radius: 16px;
+
+  background: rgb(250, 250, 248, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(250, 250, 248, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(250, 250, 248, 0.1);
+}
+
+.trust-text p{
+  font-size: 1rem;
+}
+
+.trust-images {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.trust-profiles {
+  display: flex;
+  padding-left: var(--space-xs);
+}
+
+.trust-img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 2px solid var(--surface);
+  margin-left: -15px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.trust-mark { 
+  font-size: 1.8rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-variation-settings:
+    "SOFT" 100,
+    "WONK" 0;
+  border-left: 2px solid var(--text-primary);
+  padding-left: var(--space-xs);
+}
+
+.trust-titles ul {
+  list-style: none;
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.trust-titles ul li {
+  font-size: 0.6rem;
+  color: var(--surface);
+  padding: var(--space-xs);
+  border-radius: 16px;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+
+  background: rgb(250, 250, 248, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(250, 250, 248, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(250, 250, 248, 0.1);
+  
+}

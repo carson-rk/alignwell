@@ -3,51 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,100..900,100&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>AlignWell</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <div class="pri-nav">
-        <a href="" class="logo">AlignWell</a>
-        <div class="nav-links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Pricing</a>
+        <a href="#home" class="logo">
+            <span class=logo-icon>
+                <img src="images/alignwell-logo.png" alt="AlignWell Logo">
+            </span>
+            <span class="logo-text">
+                AlignWell
+            </span>
+        </a>
+        
+        <!-- Mobile Menu -->
+
+        <div class="menu-buttons">
+
+            <a href="#mobile-menu" class="mobile-nav mobile-menu" aria-label="Mobile Menu">
+                <svg viewBox="0 0 100 100" class="mobile-icon">
+                    <rect width="30" height="30" x="10" y="20" fill="currentColor"></rect>
+                    <rect width="30" height="10" x="50" y="30" fill="currentColor"></rect>
+                    <rect width="10" height="30" x="60" y="20" fill="currentColor"></rect>
+                    <rect width="30" height="30" x="10" y="60" fill="currentColor"></rect>
+                    <rect width="30" height="30" x="50" y="60" fill="currentColor"></rect>
+                </svg>          
+            </a>
+
+            <!-- Desktop Menu -->
+    
+            <div class="nav-links desktop-nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Pricing</a>
+            </div>
+            <button class="pri-button">Get Started</button>
         </div>
-        <button class="pri-button">Get Started</button>
     </div>
 
     <div class="hero-section">
         <h1>Overwhelmed? Therapy That Actually Fits Your Life</h1>
         <p>Text or video sessions with a therapist who truly gets your life. Flexible, stigma-free support anytime you need it.</p>
         <button>Start Your Journey</button>
-        <p>350 +</p>
-        <p>Satisfied clients globally.</p>
-        <ul>
-            <li>LICENCED THERAPIST</li>
-            <li>HIPAA COMPLIANT</li>
-            <li>TRANSPARENT PRICING</li>
-            <li>FULLY CONFIDENTIAL</li>
-        </ul>
-    </div>
+        <div class="trust-signals">
+            <div class="trust-signal"> 
+                <div class="trust-images">
+                    <div class="trust-profiles">
+                        <img class="trust-img" src="images/overjoyed-woman.jpg" alt="woman smiling">
+                        <img class="trust-img" src="images/happy-young-man.jpg" alt="young man happily looking at his phone">
+                        <img class="trust-img" src="images/student-female.jpg" alt="student female smiling">
+                        <img class="trust-img" src="images/student-male.jpg" alt="student male looking at his phone smiling">
+                    </div> 
+                    <p class="trust-mark">350+</p> 
+                </div>
+                <div class="trust-text">
+                    <p>Satisfied clients globally.</p>
+                </div>
+            </div>
+            <div class="trust-titles">
+                <ul>
+                    <li>LICENCED THERAPIST</li>
+                    <li>HIPAA COMPLIANT</li>
+                    <li>TRANSPARENT PRICING</li>
+                    <li>FULLY CONFIDENTIAL</li>
+                </ul>
+            </div>
+        </div>
+    </div> 
 
     <div class="pain-section">
         <p>PAIN POINTS</p>
         <h2>You Are Not Alone</h2>
-        <h3>2am Anxiety</h3>
-        <h3> Social Pressure</h3>
-        <h3>Emotional Flow</h3>
+        <img src="images/pain-points.jpg" alt="young man scrolling through his phone while on bed">
+        <p>What's been weighing on you lately?</p>
+        <img src="images/relationships.png" alt="">
+        <h3>Relationships</h3>
+        <img src="images/money-and-career.png" alt="">
+        <h3>Money & Career</h3>
+        <img src="images/school-and-future" alt="">
+        <h3>School & Future</h3>
+        <img src="images/overwhelmed.png" alt="">
+        <h3>Overwhelmed</h3>
     </div>
 
     <div class="services-section">
     <p>SERVICES</p>
     <h2>Support That Actually Helps</h2>
-    <h3>Anxiety Reset</h3>
-    <p>Quiet racing thoughts before big presentations or deadlines.</p>
-    <h3>Relationship Clarity</h3>
-    <p>Explore your emotions and find your next steps with confidence.</p>
-    <h3>Life Transitions</h3>
-    <p>Guidance to navigate uncertainty and embrace new chapters.</p>
+    <img src="images/calm-mind.png" alt="">
+    <h3>Calm Your Mind</h3>
+    <h4>Anxiety, Overthinking, Burnout</h4>
+    <p>Learn how to manage anxiety, reduce overthinking, and feel more in control—without forcing yourself to “just relax.”</p>
+    <img src="images/navigate-life.png" alt="">
+    <h3>Navigate Your Life</h3>
+    <h4>Career, School, Direction, Decisions</h4>
+    <p>Whether it's school pressure, career confusion, or “what am I even doing with my life?” moments—we'll figure it out together, step by step.</p>
+    <img src="images/strengthen-relationships.png" alt="">
+    <h3>Strengthen Your Relationships</h3>
+    <h4>Dating, Friendships, Boundaries</h4>
+    <p>We'll unpack what's going on, help you communicate better, and build relationships that actually feel safe and fulfilling.</p>
     </div>
 
     <div class="about-section">
@@ -57,6 +116,7 @@
     <p>Hey, I'm Emma. I specialize in helping Gen Z and Millennials navigate the chaos of school, work, and relationships. My approach is practical, empathetic, and down-to-earth.</p>
     <p>“Healing isn't about becoming a different person; it's about learning to be okay with exactly who you are today.”</p>
     <button>Book Intro Call</button>
+    <img src="images/about-ema.jpg" alt="">
     </div>
 
     <div class="testimonial-section">
@@ -70,12 +130,16 @@
     <div class="process-section">
         <p>PROCESS</p>
         <h2>Getting Support is Simple</h2>
+        <img src="images/process-1.png" alt="">
         <h3>Start With Me</h3>
         <p>Tell me a bit about what you're dealing with and what you need.</p>
+        <img src="images/process-2.png" alt="">
         <h3>Pick Your Session Style</h3>
         <p>Choose between text or video sessions; whatever fits your life.</p>
+        <img src="images/process-3.png" alt="">
         <h3>Begin Your Session</h3>
         <p>We meet online at a time that works for you. No waiting rooms, no stress.</p>
+        <img src="images/process-4.png" alt="">
         <h3>Ongoing Support</h3>
         <p>We check in regularly, whether weekly or as needed.</p>
     </div>
