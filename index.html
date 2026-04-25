@@ -37,20 +37,24 @@
 
             <!-- Desktop Menu -->
     
-            <div class="nav-links desktop-nav">
+            <div class= "desktop-nav nav-links">
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Services</a>
                 <a href="">Pricing</a>
             </div>
-            <button class="pri-button">Get Started</button>
+            
+            
         </div>
+        <button class="pri-button">Get Started</button>
     </div>
 
     <div class="hero-section">
-        <h1>Overwhelmed? Therapy That Actually Fits Your Life</h1>
-        <p>Text or video sessions with a therapist who truly gets your life. Flexible, stigma-free support anytime you need it.</p>
-        <button>Start Your Journey</button>
+        <div class="hero-content">
+            <h1>Overwhelmed? Therapy That Fits Your Life</h1>
+            <p>Text or video sessions with a therapist who truly gets your life.</p>
+            <button>Start Your Journey</button>
+        </div>
         <div class="trust-signals">
             <div class="trust-signal"> 
                 <div class="trust-images">
@@ -78,119 +82,238 @@
     </div> 
 
     <div class="pain-section">
-        <p>PAIN POINTS</p>
+        <div class="section-label">
+            <p class="mark-label">PAIN POINTS</p>
+        </div>
         <h2>You Are Not Alone</h2>
-        <img src="images/pain-points.jpg" alt="young man scrolling through his phone while on bed">
-        <p>What's been weighing on you lately?</p>
-        <img src="images/relationships.png" alt="">
-        <h3>Relationships</h3>
-        <img src="images/money-and-career.png" alt="">
-        <h3>Money & Career</h3>
-        <img src="images/school-and-future" alt="">
-        <h3>School & Future</h3>
-        <img src="images/overwhelmed.png" alt="">
-        <h3>Overwhelmed</h3>
+        <div class="pain-signal">
+            <div class="pain-image">
+                <img src="images/pain-points.jpg" alt="young man scrolling through his phone while on bed">
+            </div>
+            <div class="pain-content">
+                <p>What's been weighing on you lately?</p>
+                <div class="pain-cards">
+                    <div class="pain-card">
+                        <div class="pain-heading">
+                            <img src="images/relationships.png" alt="">
+                            <h3>Relationships</h3>
+                        </div>
+                        <svg width = "24" height = "24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                        </svg>
+                    </div>
+                    <div class="pain-card">
+                        <div class="pain-heading">
+                            <img src="images/money-and-career.png" alt="">
+                            <h3>Money & Career</h3>
+                        </div>
+                        <svg width = "24" height = "24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                        </svg>
+                    </div>
+                    <div class="pain-card">
+                        <div class="pain-heading">
+                            <img src="images/school-and-future.png" alt="">
+                            <h3>School & Future</h3>
+                        </div>
+                        <svg width = "24" height = "24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                        </svg>
+                    </div>
+                    <div class="pain-card">
+                        <div class="pain-heading">
+                            <img src="images/overwhelmed.png" alt="">
+                            <h3>Overwhelmed</h3>
+                        </div>
+                        <svg width = "24" height = "24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="services-section">
-    <p>SERVICES</p>
-    <h2>Support That Actually Helps</h2>
-    <img src="images/calm-mind.png" alt="">
-    <h3>Calm Your Mind</h3>
-    <h4>Anxiety, Overthinking, Burnout</h4>
-    <p>Learn how to manage anxiety, reduce overthinking, and feel more in control—without forcing yourself to “just relax.”</p>
-    <img src="images/navigate-life.png" alt="">
-    <h3>Navigate Your Life</h3>
-    <h4>Career, School, Direction, Decisions</h4>
-    <p>Whether it's school pressure, career confusion, or “what am I even doing with my life?” moments—we'll figure it out together, step by step.</p>
-    <img src="images/strengthen-relationships.png" alt="">
-    <h3>Strengthen Your Relationships</h3>
-    <h4>Dating, Friendships, Boundaries</h4>
-    <p>We'll unpack what's going on, help you communicate better, and build relationships that actually feel safe and fulfilling.</p>
+    <div class="service-section">
+        <div class="section-label">
+            <p class="mark-label">SERVICES</p>
+        </div>
+        <h2>Support That Actually Helps</h2>
+        <div class="service-cards">
+            <div class="service-card top-left">
+                <img src="images/calm-mind.png" alt="Calm Your Mind">
+                <h3>Calm Your Mind</h3>
+                <h4>Anxiety, Overthinking, Burnout</h4>
+                <p>Learn how to manage anxiety, reduce overthinking, and feel more in control—without forcing yourself to “just relax.”</p>
+            </div>
+            <div class="service-card top-right">
+                <img src="images/navigate-life.png" alt="Navigate Your Life">
+                <h3>Navigate Your Life</h3>
+                <h4>Career, School, Direction, Decisions</h4>
+                <p>Whether it's school pressure, career confusion, or “what am I even doing with my life?” moments—we'll figure it out together, step by step.</p>
+            </div>
+            <div class="service-card bottom-center">
+                <img src="images/strengthen-relationships.png" alt="Strengthen Your Relationships">
+                <h3>Strengthen Your Relationships</h3>
+                <h4>Dating, Friendships, Boundaries</h4>
+                <p>We'll unpack what's going on, help you communicate better, and build relationships that actually feel safe and fulfilling.</p>
+            </div>
+        </div>
     </div>
+    
 
     <div class="about-section">
-    <p>ABOUT ME</p>
-    
-    <h2>Meet Your Therapist</h2>
-    <p>Hey, I'm Emma. I specialize in helping Gen Z and Millennials navigate the chaos of school, work, and relationships. My approach is practical, empathetic, and down-to-earth.</p>
-    <p>“Healing isn't about becoming a different person; it's about learning to be okay with exactly who you are today.”</p>
-    <button>Book Intro Call</button>
-    <img src="images/about-ema.jpg" alt="">
+        <div class="section-label">
+            <p class="mark-label">ABOUT ME</p>
+        </div>
+        <h2>Meet Your Therapist</h2>
+        <div class="about-content">
+            <div class="about-info">
+                <p>Hey, I'm Emma. I specialize in helping Gen Z and Millennials navigate the chaos of school, work, and relationships. My approach is practical, empathetic, and down-to-earth.</p>
+                <p class="text-quote">“Healing isn't about becoming a different person; it's about learning to be okay with exactly who you are today.”</p>
+                <button>Book Intro Call</button>
+            </div>
+            <img src="images/about-ema.jpg" alt="Emma, your therapist">
+        </div>
     </div>
 
     <div class="testimonial-section">
-        <p>TESTIMONIALS</p>
+        <div class="section-label">
+            <p class="mark-label">TESTIMONIALS</p>
+        </div>
         <h2>Real People, Real Relief</h2>
-        <p>"Finally sleeping through finals week without anxiety spiraling. Emma's tips are practical and actually help." Alex, 23, College Student</p>
-        <p>"I ended a toxic friendship and didn't crumble. Talking here helped me set boundaries and trust myself again." Maya, 24, Graduate Student</p>
-        <p>"Social media used to ruin my days. Now, I log off without guilt and feel grounded." Riley, 22,  Intern</p>
+        <div class="testimonial-cards">
+            <div class="testimonial-card top-left">
+                <p class="testimonial-quote">"Finally sleeping through finals week without anxiety spiraling. Emma's tips are practical and actually help."</p>
+                <div>
+                    <p> Alex, 23</p>
+                    <p class="testimonial-title">College Student</p>
+                </div>
+            </div>
+            <div class="testimonial-card top-right">
+                <p class="testimonial-quote">"I ended a toxic friendship and didn't crumble. Talking here helped me set boundaries and trust myself again."</p>
+                <div>
+                    <p>Maya, 24</p>
+                    <p class="testimonial-title">Graduate Student</p>
+                </div>
+            </div>
+            <div class="testimonial-card bottom-center">
+                <p class="testimonial-quote">"Social media used to ruin my days. Now, I log off without guilt and feel grounded."</p>
+                <div>
+                    <p>Riley, 22</p>
+                    <p class="testimonial-title">Intern</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="process-section">
-        <p>PROCESS</p>
+        <div class="section-label">
+            <p class="mark-label">PROCESS</p>
+        </div>
         <h2>Getting Support is Simple</h2>
-        <img src="images/process-1.png" alt="">
-        <h3>Start With Me</h3>
-        <p>Tell me a bit about what you're dealing with and what you need.</p>
-        <img src="images/process-2.png" alt="">
-        <h3>Pick Your Session Style</h3>
-        <p>Choose between text or video sessions; whatever fits your life.</p>
-        <img src="images/process-3.png" alt="">
-        <h3>Begin Your Session</h3>
-        <p>We meet online at a time that works for you. No waiting rooms, no stress.</p>
-        <img src="images/process-4.png" alt="">
-        <h3>Ongoing Support</h3>
-        <p>We check in regularly, whether weekly or as needed.</p>
+        <div class="process-cards">
+            <div class="process-card">
+                <img src="images/process-1.png" alt=""> 
+                <h3>Start With Me</h3> 
+                <p>Tell me a bit about what you're dealing with and what you need.</p>
+            </div>
+            <div class="process-card">
+                <img src="images/process-2.png" alt="">
+                <h3>Pick Your Session Style</h3>
+                <p>Choose between text or video sessions; whatever fits your life.</p>
+            </div>
+            <div class="process-card">
+                <img src="images/process-3.png" alt="">
+                <h3>Begin Your Session</h3>
+                <p>We meet online at a time that works for you. No waiting rooms, no stress.</p>
+            </div>
+            <div class="process-card">
+                <img src="images/process-4.png" alt="">
+                <h3>Ongoing Support</h3>
+                <p>We check in regularly, whether weekly or as needed.</p>
+            </div>
+        </div>
     </div>
 
     <div class="pricing-section">
-        <p>PRICING</p>
+        <div class="section-label">
+            <p class="mark-label">PRICING</p>
+        </div>
         <h2>Clear, Upfront Pricing</h2>
-        <h3>Text Therapy — $35 per session</h3>
-        <p>Message-based support you can use throughout the week.
-            Perfect if you process better by typing things out.</p>
-        <h3>Video Sessions — $70 per session</h3>
-        <p>Face-to-face virtual counseling from wherever you are.
-            Deep dives. Real conversations. No commute.</p>
-        <h3>Session Packs</h3>
-        <p>5 Video Sessions — $180
-            5 Text Sessions — $150
-            
-            Lower cost. Same support. More consistency.</p>
+        <div class="pricing-cards">
+            <div class="pricing-card top-left">
+                <h3>Text Therapy — $35 per session</h3>
+                <p>Message-based support you can use throughout the week. Perfect if you process better by typing things out.</p>
+            </div>
+            <div class="pricing-card top-right">
+                <h3>Video Sessions — $70 per session</h3>
+                <p>Face-to-face virtual counseling from wherever you are. Deep dives. Real conversations. No commute.</p>
+            </div>
+            <div class="pricing-card bottom-center">
+                <h3>Session Packs</h3>
+                <p>5 Video Sessions — $180
+                    5 Text Sessions — $150
+                    
+                    Lower cost. Same support. More consistency.</p>
+            </div>
+        </div>
+    </div>
 
     </div>
 
     <div class="faq-section">
-        <p>FAQ</p>
+        <div class="section-label">
+            <p class="mark-label">FAQ</p>
+        </div>
         <h2>Got Questions? I've Got You.</h2>
-        <h3>Is what I share with you actually private?</h3>
-        <p>Yes. What you say here stays here.
-            Our sessions are encrypted and confidential. I follow strict professional privacy laws, and I won't share anything without your permission (unless there's a serious safety risk).</p>
-        <h3>Do you take insurance? How much does this cost?</h3>
-        <p>I don't bill insurance directly. Many people prefer therapy without insurance because it keeps things simple and fully private.
+        <div class="faq-cards">
+            <div class="faq-card">
+                <h3>Is what I share with you actually private?</h3>
+                <p>Yes. What you say here stays here.
+                Our sessions are encrypted and confidential. I follow strict professional privacy laws, and I won't share anything without your permission (unless there's a serious safety risk).</p>
+            </div>
+            <div class="faq-card">
+                <h3>Do you take insurance? How much does this cost?</h3>
+                <p>I don't bill insurance directly. Many people prefer therapy without insurance because it keeps things simple and fully private.
 
-            AlignWell offers affordable therapy options, including lower-cost text therapy and session packages. No hidden fees. No surprise charges. Just clear pricing upfront.</p>
-        <h3>How does online therapy with you work?</h3>
-        <p>You choose: text therapy or live video sessions.
-            We meet virtually at a time that fits your life. No commute. No waiting room.
+                AlignWell offers affordable therapy options, including lower-cost text therapy and session packages. No hidden fees. No surprise charges. Just clear pricing upfront.</p>
+            </div>
+            <div class="faq-card">
+                <h3>How does online therapy with you work?</h3>
+                <p>You choose: text therapy or live video sessions.
+                We meet virtually at a time that fits your life. No commute. No waiting room.
             
-            This is virtual counseling designed for Gen Z mental health and busy millennial schedules. Flexible. Simple. Real.</p>
-        <h3>Are you actually qualified?</h3>
-        <p>Yes. I'm a licensed therapist with experience supporting anxiety, depression counseling, relationship stress, and big life transitions.
+                This is virtual counseling designed for Gen Z mental health and busy millennial schedules. Flexible. Simple. Real.</p>
+            </div>
+            <div class="faq-card">
+                <h3>Are you actually qualified?</h3>
+                <p>Yes. I'm a licensed therapist with experience supporting anxiety, depression counseling, relationship stress, and big life transitions.
 
-            I specialize in working with young adults because I genuinely understand this stage of life. You get professional support without the cold, clinical vibe.</p>
-        <h3>What if I need to reschedule?</h3>
-        <p>Life happens. Exams. Work shifts. Burnout weeks.
+                I specialize in working with young adults because I genuinely   understand this stage of life. You get professional support without the cold, clinical vibe.</p>
+            </div>
+            <div class="faq-card">
+                <h3>What if I need to reschedule?</h3>
+                <p>Life happens. Exams. Work shifts. Burnout weeks.
 
-            You can reschedule with 24 hours' notice. Flexible therapy scheduling means this fits your life — not the other way around.</p>
+                You can reschedule with 24 hours' notice. Flexible therapy scheduling means this fits your life — not the other way around.</p>
+            </div>
+        </div>
     </div>
 
     <div class="contact-section">
-        <p>CONTACTS</p>
+        <div class="section-label">
+            <p class="mark-label">CONTACT</p>
+        </div>
         <h2>Get In Touch</h2>
-        <p>Your Mental Health Deserves Attention Today</p>
-        <button>Message Emma Now</button>
+        <div class="contact-info">
+            <p>Your Mental Health Deserves Attention Today</p>
+            <button>Message Emma Now</button>
+        </div>
     </div>
 
     <div class="footer">
